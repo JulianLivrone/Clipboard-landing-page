@@ -1,0 +1,216 @@
+/* =================
+   Table of Contents
+
+   1. Global Styles: Global styles for my project.
+
+   2. Layout: Styles related with layout, e.g. header, nav, main, section, footer, div, etc.
+
+   3. Typography: Styles related to text, e.g. h1, h2, p, etc.
+
+   4. Assets: Styles related to assets, e.g. images, svg, etc.
+
+   5. Components: Styles related to components, e.g. buttons, etc.
+   ================= */
+
+/* =================
+   1. Global Styles
+   ================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  /* outline: 1px solid green !important; */
+}
+
+body {
+  /* Primary */
+  /* string-cyan */
+  --strong-cyan-hue: 171;
+  --strong-cyan-saturation: 66%;
+  --initial-strong-cyan-lightness: 44%;
+  --strong-cyan-lightness: var(--initial-strong-cyan-lightness);
+  /* light-blue */
+  --light-blue-hue: 233;
+  --light-blue-saturation: 100%;
+  --initial-light-blue-lightness: 69%;
+  --light-blue-lightness: var(--initial-strong-cyan-lightness);
+
+  /* Neutral */
+  --dark-grayish-blue: hsl(210, 10%, 33%);
+  --grayish-blue: hsl(201, 11%, 66%);
+  /* Variables*/
+  --button-color: var(--strong-cyan);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Bai Jamjuree', sans-serif;
+  background-image: url('./images/bg-header-mobile.png');
+  background-repeat: no-repeat;
+  background-size: 100% 20rem;
+}
+
+/* =================
+   2. Layout
+   ================= */
+
+.container {
+  width: 90%;
+  max-width: 30rem;
+  padding: 4rem 1em;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: 8rem;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.container-principal-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8rem;
+}
+
+.section-track {
+  /* background-color: lightgray; */
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.section-workflow__list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-logos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.footer__list-item {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.container-social-media-icons {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* =================
+   3. Typography
+   ================= */
+.title {
+  text-align: center;
+  color: var(--dark-grayish-blue);
+  font-size: 1.8rem;
+}
+
+.description {
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 3em;
+  color: var(--grayish-blue);
+  font-size: 0.99rem;
+}
+
+.sub-title {
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.title.header__title {
+  margin-top: 1.5em;
+}
+
+.section-workflow > .description.section-workflow__description {
+  margin-bottom: 5em;
+}
+
+.description.section-workflow__description {
+  margin-bottom: 3em;
+}
+
+/* =================
+   4. Assets
+   ================= */
+.section-track__image {
+  width: 100%;
+  max-width: 30rem;
+  height: auto;
+  margin-bottom: 2.5em;
+}
+
+.section-access-clipboard__image-devices {
+  width: 100%;
+  max-width: 30rem;
+  height: auto;
+}
+
+.section-workflow__image-icon {
+  margin-bottom: 2.5em;
+}
+
+.footer__logo {
+  width: 3rem;
+}
+
+/* =================
+   5. Components
+   ================= */
+.button {
+  width: 100%;
+  color: white;
+  padding: 1em;
+  border: none;
+  border-radius: 2em;
+  font-size: 1rem;
+}
+
+.button.button-ios {
+  --button-lightness: calc(var(--initial-strong-cyan-lightness) + 10%);
+  background-color: hsl(
+    var(--strong-cyan-hue),
+    var(--strong-cyan-saturation),
+    var(--button-lightness)
+  );
+  margin-bottom: 2em;
+}
+
+.button.button-mac {
+  --button-lightness: calc(var(--initial-light-blue-lightness) + 10%);
+  background-color: hsl(
+    var(--light-blue-hue),
+    var(--light-blue-saturation),
+    var(--button-lightness)
+  );
+}
