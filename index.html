@@ -31,8 +31,10 @@
           Clipboard allows you to track and organize everything you copy.
           Instantly access your clipboard on all your devices.
         </p>
-        <button class="button button-ios">Download for iOS</button>
-        <button class="button button-mac">Download for Mac</button>
+        <div class="container-button">
+          <button class="button button-ios">Download for iOS</button>
+          <button class="button button-mac">Download for Mac</button>
+        </div>
       </header>
       <section class="container-principal-content">
         <section class="section-track">
@@ -44,36 +46,36 @@
             you can access your snippets immediately on all your devices. Our
             Mac and iOS apps will help you organize everything.
           </p>
-          <div class="section-track__inner-container">
-            <img
-              class="section-track__image"
-              src="./images/image-computer.png"
-              alt="image-computer"
-            />
-            <ul class="section-track__list">
-              <li class="section-track__list-item">
-                <h3 class="sub-title list-item__sub-title">Quick Search</h3>
-                <p class="description list-item__description">
-                  Easily search your snippets by content, category, web address,
-                  application, and more.
-                </p>
-              </li>
-              <li class="section-track__list-item">
-                <h3 class="sub-title list-item__sub-title">iCloud Sync</h3>
-                <p class="description list-item__description">
-                  Instantly saves and syncs snippets across all your devices.
-                </p>
-              </li>
-              <li class="section-track__list-item">
-                <h3 class="sub-title list-item__sub-title">Complete History</h3>
-                <p class="description list-item__description">
-                  Retrieve any snippets from the first moment you started using
-                  the app.
-                </p>
-              </li>
-            </ul>
-          </div>
         </section>
+        <div class="section-track__inner-container">
+          <img
+            class="section-track__image"
+            src="./images/image-computer.png"
+            alt="image-computer"
+          />
+          <ul class="section-track__list">
+            <li class="section-track__list-item">
+              <h3 class="sub-title list-item__sub-title">Quick Search</h3>
+              <p class="description list-item__description">
+                Easily search your snippets by content, category, web address,
+                application, and more.
+              </p>
+            </li>
+            <li class="section-track__list-item">
+              <h3 class="sub-title list-item__sub-title">iCloud Sync</h3>
+              <p class="description list-item__description">
+                Instantly saves and syncs snippets across all your devices.
+              </p>
+            </li>
+            <li class="section-track__list-item">
+              <h3 class="sub-title list-item__sub-title">Complete History</h3>
+              <p class="description list-item__description">
+                Retrieve any snippets from the first moment you started using
+                the app.
+              </p>
+            </li>
+          </ul>
+        </div>
         <section class="section-access-clipboard">
           <h2 class="title section-access-clipboard__title">
             Access Clipboard anywhere
@@ -159,18 +161,30 @@
             Available for free on the App Store. Download for Mac or iOS, sync
             with iCloud and you’re ready to start adding to your clipboard.
           </p>
-          <button class="button button-ios">Download for iOS</button>
-          <button class="button button-mac">Download for Mac</button>
+          <div class="container-button">
+            <button class="button button-ios">Download for iOS</button>
+            <button class="button button-mac">Download for Mac</button>
+          </div>
         </section>
       </section>
       <footer class="footer">
         <img class="footer__logo" src="./images/logo.svg" alt="logo" />
         <ul class="footer__list">
-          <li class="footer__list-item">FAQs</li>
-          <li class="footer__list-item">Contact Us</li>
-          <li class="footer__list-item">Privacy Policy</li>
-          <li class="footer__list-item">Press Kit</li>
-          <li class="footer__list-item">Install Guide</li>
+          <li class="footer__list-item">
+            <a class="footer__list-item-link" href="#"> FAQs </a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-item-link" href="#">Contact Us</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-item-link" href="#">Privacy Policy</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-item-link" href="#">Press Kit</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-item-link" href="#">Install Guide</a>
+          </li>
         </ul>
         <div class="container-social-media-icons">
           <img
